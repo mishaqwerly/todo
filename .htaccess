@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !/dayside/.*
+RewriteRule ^(.*)$ index.php
